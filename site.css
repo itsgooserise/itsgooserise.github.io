@@ -1,0 +1,66 @@
+/* Goose Rise — site styles. Pure CSS, no dependencies.
+
+   ŞİRKET BİLGİSİ (tek açma/kapama noktası):
+   Şirket kurulunca aşağıdaki .company kuralını silin veya yorum satırı yapın; {{SIRKET_UNVANI}} ve {{ADRES}}
+   satırları her iki sayfada görünür olur. O satırları index.html ve privacy.html içinde doldurmayı unutmayın.    */
+.company{display:none}
+
+:root{
+  --bg:#f5f8ff; --panel:#ffffff; --ink:#1b2340; --muted:#5b6788; --line:#d9e1f0;
+  --blue:#2f8bff; --blue-dark:#1c4fd8; --green:#39d353; --accent:#ffc21e; --accent-dark:#b97d00;
+  --shadow:0 10px 30px rgba(27,35,64,.10);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#0f1730; --panel:#182346; --ink:#f1f4fb; --muted:#aab4d0; --line:#2b3862; --shadow:0 10px 30px rgba(0,0,0,.35); color-scheme:dark}
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;padding-block:0 48px}
+a{color:var(--blue);text-decoration-thickness:2px;text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+.wrap{max-width:760px;margin:0 auto;padding-inline:16px}
+
+/* header */
+.top{background:linear-gradient(180deg,var(--blue-dark),var(--blue));color:#fff;padding-block:18px}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:800;font-size:20px;letter-spacing:.01em}
+.brand svg{width:34px;height:34px;flex:none}
+.top nav{display:flex;gap:18px;font-weight:700}
+.top nav a{color:#fff;text-decoration:none;opacity:.92}
+.top nav a:hover{text-decoration:underline}
+
+/* hero */
+.hero{padding-block:56px 36px;text-align:center}
+.hero h1{font-size:clamp(34px,7vw,52px);line-height:1.05;margin:0 0 12px;letter-spacing:-.01em;text-wrap:balance}
+.hero p{margin:0 auto;max-width:52ch;color:var(--muted);font-size:18px}
+
+/* cards */
+.card{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:var(--shadow)}
+.game{display:grid;grid-template-columns:96px 1fr;gap:20px;align-items:center}
+.game .art{width:96px;height:96px;border-radius:22px;background:radial-gradient(circle at 50% 42%,#7fd8ff 0,#2f8bff 45%,#1c4fd8 100%);display:grid;place-items:center;color:#fff;font-weight:900;font-size:40px;box-shadow:inset 0 -6px 0 rgba(0,0,0,.18)}
+.game h2{margin:0 0 4px;font-size:24px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.game p{margin:0;color:var(--muted)}
+.tag{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:999px;background:var(--accent);color:#3a2a00}
+@media (max-width:420px){.game{grid-template-columns:1fr}.game .art{width:72px;height:72px;font-size:30px}}
+
+section{padding-block:18px}
+h2.sec{font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 0 12px}
+.contact{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center}
+.contact code{font:inherit;font-weight:700;user-select:all;background:var(--bg);border:1px solid var(--line);padding:4px 10px;border-radius:8px}
+
+footer{margin-top:28px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:14px;display:grid;gap:4px}
+footer a{color:inherit}
+
+/* privacy page */
+.doc h1{font-size:clamp(28px,6vw,40px);margin:36px 0 6px;letter-spacing:-.01em;text-wrap:balance}
+.doc .meta{color:var(--muted);margin:0 0 20px}
+.lang{display:flex;gap:8px;margin:0 0 20px;flex-wrap:wrap}
+.lang a{text-decoration:none;font-weight:700;padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--panel);color:var(--ink)}
+.lang a:hover{border-color:var(--blue)}
+.doc section.policy{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:26px 24px;margin-bottom:22px;box-shadow:var(--shadow);scroll-margin-top:16px}
+.doc section.policy h2{margin:0 0 4px;font-size:26px}
+.doc section.policy h3{font-size:18px;margin:22px 0 6px}
+.doc section.policy p,.doc section.policy li{margin:0 0 8px;max-width:66ch}
+.doc section.policy ul{padding-left:20px;margin:0 0 8px}
+.note{font-size:14px;color:var(--muted)}
