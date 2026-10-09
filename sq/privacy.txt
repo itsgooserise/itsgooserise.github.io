@@ -1,0 +1,71 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;800&family=Permanent+Marker&family=Special+Elite&display=swap">
+<style>
+.gr{--green:#1e9b46;--paper:#f1ede3;--card:#fbfaf6;--ink:#141414;--grey:#5c5a52;
+  --marker:"Permanent Marker","Marker Felt",cursive;--type:"Special Elite","Courier New",monospace;--body:"Archivo","Helvetica Neue",Arial,sans-serif;
+  background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6;text-align:left}
+.gr *{box-sizing:border-box}
+.gr a{color:var(--ink);text-decoration-color:var(--green);text-decoration-thickness:3px;text-underline-offset:3px}
+.gr p,.gr h1,.gr h2,.gr h3,.gr ul{margin:0;padding:0;letter-spacing:normal;text-transform:none}
+.gr .in{max-width:900px;margin:0 auto;padding-left:28px;padding-right:28px}
+@media (max-width:560px){.gr .in{padding-left:18px;padding-right:18px}}
+.gr .top{position:sticky;top:0;z-index:50;background:var(--green);border-bottom:2px solid var(--ink)}
+.gr .top .in{display:flex;align-items:center;justify-content:space-between;gap:8px 18px;flex-wrap:wrap;padding-top:12px;padding-bottom:12px}
+.gr .brand{font-family:var(--marker);font-size:26px;line-height:1;text-decoration:none;color:var(--ink);transform:rotate(-2deg);display:inline-block}
+.gr .top nav{display:flex;gap:16px;flex-wrap:wrap;font-family:var(--type);font-size:14px;letter-spacing:.08em;text-transform:uppercase}
+.gr .top nav a{text-decoration:none}
+.gr .doc{padding-top:44px;padding-bottom:52px}
+.gr .doc h1{font-family:var(--marker);font-weight:400;font-size:clamp(36px,6vw,54px);line-height:1;margin:0 0 8px;transform:rotate(-1.5deg);transform-origin:left;color:var(--ink)}
+.gr .doc .meta{font-family:var(--type);color:var(--grey);margin:0 0 18px}
+.gr .lang{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 22px}
+.gr .lang a{font-family:var(--type);text-decoration:none;border:2px solid var(--ink);padding:6px 12px;background:#fff}
+.gr .policy{background:var(--card);border:2px solid var(--ink);padding:24px;margin-bottom:20px;scroll-margin-top:70px}
+.gr .policy h2{font-family:var(--marker);font-weight:400;font-size:32px;margin:0 0 10px;transform:rotate(-1deg);transform-origin:left;color:var(--ink)}
+.gr .policy h3{font-family:var(--body);font-size:17px;font-weight:800;margin:20px 0 4px;color:var(--ink)}
+.gr .policy p,.gr .policy li{max-width:66ch;margin:0 0 6px;color:#2c2b27}
+.gr .policy ul{padding-left:20px;margin:0 0 6px;list-style:disc}
+.gr .policy li{list-style:disc}
+.gr footer.site{background:var(--ink);color:#bdb8aa;font-family:var(--type);font-size:13px;letter-spacing:.06em}
+.gr footer.site .in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 20px;padding-top:22px;padding-bottom:22px}
+.gr footer.site a{color:#bdb8aa}
+</style>
+<div class="gr">
+  <header class="top"><div class="in"><a class="brand" href="/">goose rise</a><nav><a href="/#games">Games</a><a href="/#founder">Founder</a><a href="/#contact">Contact</a></nav></div></header>
+  <div class="in doc">
+    <h1>Privacy Policy</h1>
+    <p class="meta">Goose Rise games · Last updated / Son güncelleme: 9 October 2026</p>
+    <nav class="lang" aria-label="Language"><a href="#en">English</a><a href="#tr">Türkçe</a></nav>
+    <section class="policy" id="en" lang="en">
+      <h2>English</h2>
+      <p>This policy covers the games made by Goose Rise: the web versions published on Poki and the Android / iOS apps.</p>
+      <h3>1. Data we handle</h3>
+      <ul><li><strong>Anonymous gameplay analytics.</strong> Our games send events such as "level 3 started" or "level 3 completed". They contain no name, email, account, device identifier or location and are not linked to you as a person. We use them only to balance levels and improve the games.</li>
+      <li><strong>Progress saved on your device.</strong> Level, stars, points and settings are stored in your browser's or the app's local storage. They never leave your device and are deleted when you clear site data or uninstall the app.</li></ul>
+      <p>Our games have no accounts, no sign-in, no chat, no user-generated content and no in-app purchases.</p>
+      <h3>2. Web versions on Poki</h3>
+      <p>On poki.com (or sites that embed Poki games) the Poki platform serves the ads and processes the anonymous gameplay events through its own infrastructure. Cookies, consent and ad personalisation there follow Poki's rules: see the <a href="https://poki.com/en/privacy" target="_blank" rel="noopener">Poki Privacy Center</a>.</p>
+      <h3>3. Mobile apps</h3>
+      <p>The apps contain no Poki code and show no Poki ads. The same anonymous events may be sent to an analytics provider (for example Google Firebase Analytics); they contain no personal identifiers. Any new data processing will be announced here first.</p>
+      <h3>4. What we do not do</h3>
+      <ul><li>We do not sell, rent or trade personal data; we hold none.</li><li>We do not access contacts, camera, microphone, photos or location.</li><li>We do not knowingly collect personal data from children; our games are suitable for all ages.</li></ul>
+      <h3>5. Your rights and contact</h3>
+      <p>We hold no personal data to access, correct or delete; your local save is removed by clearing site data or uninstalling. Questions: <a href="mailto:hello@itsgooserise.com">hello@itsgooserise.com</a>. We answer within 30 days. Rights under KVKK, GDPR, UK and California law are unaffected.</p>
+    </section>
+    <section class="policy" id="tr" lang="tr">
+      <h2>Türkçe</h2>
+      <p>Bu politika Goose Rise'ın yaptığı oyunları kapsar: Poki'de yayımlanan web sürümleri ve Android / iOS uygulamaları.</p>
+      <h3>1. İşlediğimiz veriler</h3>
+      <ul><li><strong>Anonim oyun içi analitik.</strong> Oyunlarımız "3. bölüm başladı" gibi olaylar gönderir. Ad, e-posta, hesap, cihaz kimliği veya konum içermez; sizinle kişi olarak ilişkilendirilmez. Yalnızca bölümleri dengelemek ve oyunları geliştirmek için kullanılır.</li>
+      <li><strong>Cihazınızda saklanan ilerleme.</strong> Bölüm, yıldız, puan ve ayarlar tarayıcınızın veya uygulamanın yerel depolamasında tutulur; cihazınızdan çıkmaz, site verilerini temizleyince ya da uygulamayı kaldırınca silinir.</li></ul>
+      <p>Oyunlarımızda hesap, giriş, sohbet, kullanıcı içeriği veya uygulama içi satın alma yoktur.</p>
+      <h3>2. Poki'deki web sürümleri</h3>
+      <p>poki.com'da (veya Poki oyunlarını gömen sitelerde) reklamları Poki platformu gösterir ve anonim olayları kendi altyapısında işler. Çerez, rıza ve reklam kişiselleştirmesi Poki'nin kurallarına tabidir: <a href="https://poki.com/en/privacy" target="_blank" rel="noopener">Poki Privacy Center</a>.</p>
+      <h3>3. Mobil uygulamalar</h3>
+      <p>Uygulamalarda Poki kodu ve Poki reklamı yoktur. Aynı anonim olaylar bir analitik sağlayıcısına (örn. Google Firebase Analytics) gönderilebilir; kişisel tanımlayıcı içermez. Yeni bir veri işleme önce burada duyurulur.</p>
+      <h3>4. Yapmadıklarımız</h3>
+      <ul><li>Kişisel veri satmayız, kiralamayız, takas etmeyiz; elimizde yoktur.</li><li>Kişiler, kamera, mikrofon, fotoğraf veya konuma erişmeyiz.</li><li>Çocuklardan bilerek kişisel veri toplamayız; oyunlarımız her yaşa uygundur.</li></ul>
+      <h3>5. Haklarınız ve iletişim</h3>
+      <p>Erişilecek, düzeltilecek veya silinecek kişisel veri tutmuyoruz; yerel kaydınızı site verilerini temizleyerek ya da uygulamayı kaldırarak silersiniz. Sorular: <a href="mailto:hello@itsgooserise.com">hello@itsgooserise.com</a>. 30 gün içinde yanıtlarız. KVKK, GDPR, Birleşik Krallık ve Kaliforniya mevzuatındaki haklarınız saklıdır.</p>
+    </section>
+  </div>
+  <footer class="site"><div class="in"><span>© 2026 goose rise</span><a href="/">itsgooserise.com</a></div></footer>
+</div>

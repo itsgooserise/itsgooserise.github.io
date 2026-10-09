@@ -1,0 +1,166 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;800&family=Permanent+Marker&family=Special+Elite&display=swap">
+<style>
+.gr{--green:#1e9b46;--green-deep:#0e3a1e;--paper:#f1ede3;--card:#fbfaf6;--ink:#141414;--grey:#5c5a52;--line:#cfc8b6;
+  --marker:"Permanent Marker","Marker Felt",cursive;--type:"Special Elite","Courier New",monospace;--body:"Archivo","Helvetica Neue",Arial,sans-serif;
+  background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6;text-align:left}
+.gr *{box-sizing:border-box}
+.gr a{color:var(--ink);text-decoration-color:var(--green);text-decoration-thickness:3px;text-underline-offset:3px}
+.gr a:focus-visible{outline:3px solid var(--green);outline-offset:3px}
+.gr p,.gr h1,.gr h2,.gr h3,.gr h4,.gr ul,.gr ol{margin:0;padding:0;letter-spacing:normal;text-transform:none}
+.gr .in{max-width:900px;margin:0 auto;padding-left:28px;padding-right:28px}
+@media (max-width:560px){.gr .in{padding-left:18px;padding-right:18px}}
+.gr .top{position:sticky;top:0;z-index:50;background:var(--green);border-bottom:2px solid var(--ink)}
+.gr .top .in{display:flex;align-items:center;justify-content:space-between;gap:8px 18px;flex-wrap:wrap;padding-top:12px;padding-bottom:12px}
+.gr .brand{font-family:var(--marker);font-size:26px;line-height:1;text-decoration:none;color:var(--ink);transform:rotate(-2deg);display:inline-block}
+.gr .top nav{display:flex;gap:16px;flex-wrap:wrap;font-family:var(--type);font-size:14px;letter-spacing:.08em;text-transform:uppercase}
+.gr .top nav a{text-decoration:none}
+.gr .top nav a:hover{text-decoration:underline;text-decoration-color:var(--ink)}
+.gr .hero{display:grid;grid-template-columns:52px minmax(0,1fr) 52px;background:var(--green);padding:28px 0;border-bottom:2px solid var(--ink)}
+.gr .spine{writing-mode:vertical-rl;transform:rotate(180deg);font-family:var(--type);font-size:14px;letter-spacing:.14em;text-align:center;white-space:nowrap;overflow:hidden;align-self:center}
+.gr .spine.r{transform:none}
+.gr .cover{position:relative;overflow:hidden;background:#fbfbf8;border:2px solid var(--ink);padding:64px 24px 54px;text-align:center}
+.gr .halftone{position:absolute;inset:0;background-image:radial-gradient(rgba(20,20,20,.3) 1.1px,transparent 1.8px);background-size:7px 7px;-webkit-mask-image:linear-gradient(155deg,transparent 30%,#000 100%);mask-image:linear-gradient(155deg,transparent 30%,#000 100%)}
+.gr .cover h1{position:relative;font-family:var(--marker);font-weight:400;font-size:clamp(58px,12vw,132px);line-height:.92;margin:0 0 18px;transform:rotate(-3deg);color:var(--ink)}
+.gr .cover .tag{position:relative;font-family:var(--type);font-size:clamp(17px,2.6vw,22px);letter-spacing:.12em;margin:0 0 10px}
+.gr .cover .sub{position:relative;max-width:44ch;margin:0 auto 26px;color:#2c2b27}
+.gr .play{position:relative;display:inline-block;background:var(--ink);color:var(--paper);font-family:var(--type);letter-spacing:.1em;text-decoration:none;padding:12px 22px;border:2px solid var(--ink)}
+.gr .play:hover{background:var(--green);color:var(--ink)}
+@media (max-width:640px){.gr .hero{grid-template-columns:1fr;padding:14px 14px 18px;gap:10px}.gr .spine{writing-mode:horizontal-tb;transform:none;white-space:normal;font-size:12px}.gr .spine.r{display:none}.gr .cover{padding:44px 16px 40px}}
+.gr section.sec{padding:56px 0}
+.gr section.sec + section.sec{border-top:2px dashed var(--line)}
+.gr .eyebrow{font-family:var(--type);font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--grey);margin:0 0 8px}
+.gr .eyebrow b{font-weight:400;background:var(--ink);color:var(--paper);padding:2px 7px;margin-right:6px}
+.gr h2{font-family:var(--marker);font-weight:400;font-size:clamp(32px,5.4vw,50px);line-height:1.05;margin:0 0 22px;transform:rotate(-1deg);transform-origin:left;color:var(--ink)}
+.gr .games{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:34px 28px;margin-top:8px}
+.gr .card{position:relative;background:var(--card);border:2px solid var(--ink)}
+.gr .card::before{content:"";position:absolute;top:-13px;left:50%;width:108px;height:26px;transform:translateX(-50%) rotate(-3deg);background:rgba(30,155,70,.6);z-index:2}
+.gr .art{position:relative;aspect-ratio:4/3;max-width:100%;background:#fff;border-bottom:2px solid var(--ink);display:grid;place-items:center;overflow:hidden}
+.gr .art .halftone{-webkit-mask-image:radial-gradient(circle at 50% 50%,transparent 22%,#000 75%);mask-image:radial-gradient(circle at 50% 50%,transparent 22%,#000 75%)}
+.gr .art .q{position:relative;font-family:var(--marker);font-size:clamp(96px,16vw,150px);line-height:1;transform:rotate(-8deg)}
+.gr .art.ghost{background:repeating-linear-gradient(-45deg,#efebe0 0 10px,#e4dfd1 10px 20px)}
+.gr .art.ghost .q{color:var(--grey);font-size:84px}
+.gr .card .body{padding:16px 18px 20px}
+.gr .card h3{margin:0 0 6px;font-family:var(--body);font-size:20px;font-weight:800;display:flex;gap:10px;align-items:center;flex-wrap:wrap;color:var(--ink)}
+.gr .card p{color:#3b3a35}
+.gr .pill{font-family:var(--type);font-weight:400;font-size:12px;letter-spacing:.1em;text-transform:uppercase;background:var(--green);color:#fff;padding:3px 8px}
+.gr .pill.dim{background:var(--ink)}
+.gr .founder{display:grid;grid-template-columns:220px minmax(0,1fr);gap:36px;align-items:start}
+.gr .photo{aspect-ratio:1;max-width:220px;width:100%;border:9px solid #fff;outline:2px solid var(--ink);transform:rotate(2deg);overflow:hidden;background:#d7d4ca}
+.gr .photo img{display:block;width:100%;height:100%;object-fit:cover}
+.gr .founder h3{font-family:var(--body);font-size:26px;font-weight:800;color:var(--ink)}
+.gr .role{font-family:var(--type);letter-spacing:.06em;margin:2px 0 14px;color:var(--green-deep)}
+.gr .founder p{max-width:62ch;margin:0 0 14px}
+.gr .btn{display:inline-block;font-family:var(--type);letter-spacing:.08em;text-decoration:none;border:2px solid var(--ink);padding:10px 18px;background:#fff}
+.gr .btn:hover{background:var(--green)}
+@media (max-width:640px){.gr .founder{grid-template-columns:1fr;gap:26px}.gr .photo{max-width:170px}}
+.gr .tracks{list-style:none}
+.gr .tracks > li{padding:16px 0;border-top:1px dashed var(--line);list-style:none}
+.gr .tracks > li:first-child{border-top:0;padding-top:4px}
+.gr .row{display:flex;align-items:baseline;gap:10px}
+.gr .row .t{font-weight:800;font-size:17px;min-width:0}
+.gr .row .lead{flex:1;border-bottom:2px dotted #9b968a;transform:translateY(-5px);min-width:24px}
+.gr .row .d{font-family:var(--type);font-size:14px;white-space:nowrap}
+.gr .tracks .game{display:block;font-family:var(--type);font-size:14px;color:var(--green-deep);margin-top:2px}
+.gr .tracks ul{margin:8px 0 0;padding-left:18px;color:#2c2b27;list-style:disc}
+.gr .tracks ul li{margin:0 0 4px;list-style:disc}
+@media (max-width:560px){.gr .row{flex-wrap:wrap;gap:2px 10px}.gr .row .lead{display:none}.gr .row .d{width:100%}}
+.gr h4{font-family:var(--type);font-weight:400;font-size:14px;letter-spacing:.14em;text-transform:uppercase;margin:34px 0 10px;color:var(--grey)}
+.gr .edu{list-style:none;display:grid;gap:6px}
+.gr .edu li{display:flex;flex-wrap:wrap;gap:2px 12px;align-items:baseline;list-style:none}
+.gr .edu span{font-family:var(--type);font-size:14px;color:var(--grey)}
+.gr .skills{display:flex;flex-wrap:wrap;gap:10px}
+.gr .skills span{font-family:var(--type);font-size:14px;background:#fff;border:2px solid var(--ink);padding:5px 10px}
+.gr .skills span:nth-child(odd){transform:rotate(-1.5deg)}
+.gr .skills span:nth-child(even){transform:rotate(1.2deg)}
+.gr .contact{display:flex;flex-wrap:wrap;gap:14px 18px;align-items:center}
+.gr .contact .mail{font-family:var(--type);font-size:20px;background:#fff;border:2px solid var(--ink);padding:10px 14px;text-decoration:none;word-break:break-all}
+.gr .contact .mail:hover{background:var(--green)}
+.gr footer.site{background:var(--ink);color:#bdb8aa;font-family:var(--type);font-size:13px;letter-spacing:.06em}
+.gr footer.site .in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 20px;padding-top:22px;padding-bottom:22px}
+.gr footer.site a{color:#bdb8aa}
+</style>
+<div class="gr">
+  <header class="top"><div class="in">
+    <a class="brand" href="/">goose rise</a>
+    <nav><a href="#games">Games</a><a href="#founder">Founder</a><a href="#contact">Contact</a><a href="/privacy">Privacy</a></nav>
+  </div></header>
+
+  <section class="hero">
+    <div class="spine" aria-hidden="true">goose rise · side a: puzzles · side b: physics · bonus track: skill · 2026</div>
+    <div class="cover">
+      <div class="halftone"></div>
+      <h1>goose rise</h1>
+      <p class="tag">puzzle · physics · skill games</p>
+      <p class="sub">An independent game studio. Small games you play with one finger and keep getting better at.</p>
+      <a class="play" href="#games">▶ press play</a>
+    </div>
+    <div class="spine r" aria-hidden="true">independent studio · istanbul · made by hand and by agents</div>
+  </section>
+
+  <section class="sec" id="games"><div class="in">
+    <p class="eyebrow"><b>side a</b>games</p>
+    <h2>Something is in the lab.</h2>
+    <div class="games">
+      <article class="card">
+        <div class="art"><div class="halftone"></div><div class="q">?</div></div>
+        <div class="body"><h3>First title <span class="pill">in playtesting</span></h3><p>A one-finger physics puzzle. Web first, phones next. 2026.</p></div>
+      </article>
+      <article class="card">
+        <div class="art ghost"><div class="q">+</div></div>
+        <div class="body"><h3>More in the lab <span class="pill dim">prototyping</span></h3><p>Small team, fast prototypes, one game at a time. Follow along on LinkedIn.</p></div>
+      </article>
+    </div>
+  </div></section>
+
+  <section class="sec" id="founder"><div class="in">
+    <p class="eyebrow"><b>side b</b>founder</p>
+    <h2>Made by a PM who shipped live games.</h2>
+    <div class="founder">
+      <div class="photo"><img src="https://itsgooserise.github.io/assets/founder_bw_800.jpg" alt="Cem Tokgöz" width="800" height="800"></div>
+      <div>
+        <h3>Cem Tokgöz</h3>
+        <p class="role">Product Manager – Games &amp; Live Ops · Türkiye</p>
+        <p>Product manager in mobile and live games since 2018: the daily puzzle pipeline on Words of Wonders at Fugo, a concept-to-market hyper-casual pipeline at Studio Billion, and release go/no-go on Hunt: Showdown 1896 at Crytek.</p>
+        <p>Since January 2026, Goose Rise: games built with a PM at the center and AI agents in the engineering and content seats.</p>
+        <a class="btn" href="https://www.linkedin.com/in/cemtokgoz" target="_blank" rel="noopener">LinkedIn profile</a>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="sec" id="experience"><div class="in">
+    <p class="eyebrow"><b>track list</b>experience</p>
+    <h2>Where the live-ops reflexes come from.</h2>
+    <ol class="tracks">
+      <li><div class="row"><span class="t">Product Manager · Independent</span><span class="lead"></span><span class="d">Jan 2026 – Present</span></div>
+        <ul><li>Research, ideation, iteration — mobile puzzle</li><li>Games built with a PM at the center and AI agents in the engineering and content seats</li></ul></li>
+      <li><div class="row"><span class="t">Product Manager · Crytek</span><span class="lead"></span><span class="d">Aug 2024 – Jan 2026</span></div><span class="game">Hunt: Showdown 1896</span>
+        <ul><li>Release quality and go/no-go across the Aug 2024 relaunch and 8+ seasonal releases</li></ul></li>
+      <li><div class="row"><span class="t">Senior Product Manager · Studio Billion</span><span class="lead"></span><span class="d">Feb 2023 – Aug 2024</span></div>
+        <ul><li>GDD, feature prioritization and systems design on Rumble Suits — core loop, progression, economy — concept to production</li></ul></li>
+      <li><div class="row"><span class="t">Product Manager · Studio Billion</span><span class="lead"></span><span class="d">Sep 2021 – Feb 2023</span></div>
+        <ul><li>Concept-to-market pipeline for the hyper-casual portfolio: prototyping, publisher pitches, CPI / D1–D7 tests across 10+ titles</li></ul></li>
+      <li><div class="row"><span class="t">Product Manager · Kaiju Games İstanbul</span><span class="lead"></span><span class="d">Feb 2021 – Aug 2021</span></div>
+        <ul><li>20 game concepts as publisher one-pagers, backed by market research and core-loop definition</li><li>Rapid prototypes across 15 games ahead of submission</li></ul></li>
+      <li><div class="row"><span class="t">Product Manager · Fugo Games</span><span class="lead"></span><span class="d">Nov 2019 – Oct 2020</span></div><span class="game">Words of Wonders: Crossword</span>
+        <ul><li>Level-funnel analysis and difficulty pacing on Words of Wonders to reduce drop-off</li></ul></li>
+      <li><div class="row"><span class="t">Associate Product Manager · Fugo Games</span><span class="lead"></span><span class="d">Nov 2018 – Nov 2019</span></div>
+        <ul><li>Daily puzzle pipeline and content management on Words of Wonders from launch</li></ul></li>
+    </ol>
+    <h4>Education</h4>
+    <ul class="edu">
+      <li><b>Bahçeşehir Üniversitesi</b> Master of Arts, Digital Game Design <span>Sep 2020 – Jun 2023</span></li>
+      <li><b>Koç Üniversitesi</b> Bachelor of Science, Media and Visual Arts <span>Sep 2011 – Feb 2017</span></li>
+      <li><b>Lycée Français Saint-Michel</b> <span>Sep 2005 – Jun 2011</span></li>
+    </ul>
+    <h4>Skills</h4>
+    <div class="skills"><span>Product Management</span><span>Live Operations</span><span>Free-to-Play (F2P)</span><span>A/B Testing</span><span>Unity</span></div>
+  </div></section>
+
+  <section class="sec" id="contact"><div class="in">
+    <p class="eyebrow"><b>liner notes</b>contact</p>
+    <h2>Say hello.</h2>
+    <div class="contact"><span>Publishers, press, partners:</span><a class="mail" href="mailto:hello@itsgooserise.com">hello@itsgooserise.com</a><a class="btn" href="https://www.linkedin.com/in/cemtokgoz" target="_blank" rel="noopener">LinkedIn</a></div>
+  </div></section>
+
+  <footer class="site"><div class="in"><span>© 2026 goose rise · puzzle · physics · skill</span><a href="/privacy">privacy policy</a></div></footer>
+</div>
