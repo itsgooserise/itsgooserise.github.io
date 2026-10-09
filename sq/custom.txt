@@ -1,0 +1,14 @@
+/* Goose Rise pages: each page is one code block (div.gr) that draws its own header, sections and footer.
+   On those pages hide the template header/footer and let the block run edge to edge in normal flow. */
+body:has(.gr) #header,
+body:has(.gr) #footer-sections { display: none !important; }
+body:has(.gr) { background: #f1ede3 !important; }
+.page-section:has(.gr) { padding: 0 !important; min-height: 0 !important; }
+.page-section:has(.gr) .section-border,
+.page-section:has(.gr) .section-background { background: #f1ede3 !important; }
+.page-section:has(.gr) .content-wrapper { padding: 0 !important; max-width: none !important; width: 100% !important; }
+.page-section:has(.gr) .content { width: 100% !important; }
+.fluid-engine:has(.gr) { display: block !important; }
+.fe-block:has(.gr) { width: 100% !important; height: auto !important; }
+.fe-block:has(.gr) .sqs-block { padding: 0 !important; }
+.sqs-block-code .gr { margin: 0; }
